@@ -1,0 +1,62 @@
+﻿<Window x:Class="Stadium_Seating.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Stadium_Seating"
+        mc:Ignorable="d"
+        Title="Stadium Seating" Height="450" Width="800">
+    <Grid>
+        <GroupBox Header="Ticket Sold" Margin="22,31,422,194">
+            <StackPanel Orientation="Vertical" Height="185" >
+                <Label Content="Enter the number of tickets sold for each class seats>"/>
+                <StackPanel Margin="10" Orientation="Horizontal">
+                    <Label Content="Class A"></Label>
+                    <TextBox x:Name="txtboxA" Width="145"  Margin="10,0,0,0"></TextBox>
+                </StackPanel>
+                <StackPanel Margin="10" Orientation="Horizontal">
+                    <Label Content="Class B"></Label>
+                    <TextBox x:Name="txtboxB" Width="145"  Margin="10,0,0,0"></TextBox>
+                </StackPanel>
+                <StackPanel Margin="10" Orientation="Horizontal">
+                    <Label Content="Class C"></Label>
+                    <TextBox x:Name="txtboxC" Width="145"  Margin="10,0,0,0"></TextBox>
+                </StackPanel>
+
+
+
+
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Header="Revenue Generated" Margin="409,31,24,194">
+            <StackPanel Orientation="Vertical" Height="184" >
+
+                <StackPanel Margin="10" Orientation="Horizontal">
+                    <Label Content="Class A"></Label>
+                    <TextBox x:Name="txtbox1" Width="145"  Margin="10,0,0,0"></TextBox>
+                </StackPanel>
+                <StackPanel Margin="10" Orientation="Horizontal">
+                    <Label Content="Class B"></Label>
+                    <TextBox x:Name="txtbox2" Width="145"  Margin="10,0,0,0"></TextBox>
+                </StackPanel>
+                <StackPanel Margin="10" Orientation="Horizontal">
+                    <Label Content="Class C"></Label>
+                    <TextBox x:Name="txtbox3" Width="145"  Margin="10,0,0,0"></TextBox>
+                </StackPanel>
+
+                <StackPanel Margin="10" Orientation="Horizontal">
+                    <Label Content="Total"></Label>
+                    <TextBox x:Name="txtboxtotal" Width="145"  Margin="20,0,0,0"></TextBox>
+                </StackPanel>
+
+
+
+
+            </StackPanel>
+        </GroupBox>
+        <Button Content="Calculate Revenue" HorizontalAlignment="Left" Margin="180,303,0,0" VerticalAlignment="Top" Height="41" Width="118" Click="calculate_revenue"/>
+        <Button Content="Clear" HorizontalAlignment="Center" Margin="0,303,0,0" VerticalAlignment="Top" Height="41" Width="84" Click="clear"/>
+        <Button Content="Exit" HorizontalAlignment="Left" Margin="515,303,0,0" VerticalAlignment="Top" Height="41" Width="74" Click="exit"/>
+
+    </Grid>
+</Window>
